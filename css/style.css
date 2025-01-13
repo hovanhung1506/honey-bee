@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-family: 'Baloo Paaji 2', sans-serif;
+  font-size: 62.5%;
+}
+
+.banner-header {
+  background-image: url('../assets/bg_header.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f4c70f;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-header-title {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+header {
+  background-color: #272625;
+}
+
+header .container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.active {
+  color: #f4c70f !important;
+}
+
+.menu-left li {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+}
+
+.menu-left li > a {
+  display: block;
+  padding: 28px 0;
+}
+
+.menu-left li:hover > a {
+  color: #f4c70f;
+}
+
+.menu-left li:hover .submenu-1 {
+  display: block;
+  position: absolute;
+}
+
+.menu-left .submenu-1 li a {
+  color: #575454;
+  white-space: nowrap;
+  padding: 8px 16px;
+  display: block;
+  font-weight: normal;
+}
+
+.menu-left,
+.menu-right {
+  flex-basis: 40%;
+}
+
+.menu-left > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submenu-1,
+.submenu-2 {
+  display: none;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  width: 200px;
+}
+
+.submenu-1 li:not(:last-child) {
+  border-bottom: 1px solid #f5af1a;
+}
+
+.submenu-1 li:hover {
+  background-color: #f5af1a;
+}
+
+.submenu-1 li:hover > a {
+  color: #fff;
+}
+
+.submenu-1 li {
+  position: relative;
+}
+
+.submenu-1 li:hover .submenu-2 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.submenu-1 li {
+  color: #575454;
+}
+
+.menu-center {
+  flex-basis: 20%;
+  height: 80px;
+}
+
+.menu-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-right {
+  display: flex;
+  justify-content: right;
+  gap: 24px;
+}
+
+.hotline span {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.hotline span:last-child {
+  color: #f4c70f;
+}
+
+.menu-right .icon i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.menu-right .icon {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown span:first-child {
+  margin-right: 4px;
+}
+
+.float-right {
+  float: right;
+}
